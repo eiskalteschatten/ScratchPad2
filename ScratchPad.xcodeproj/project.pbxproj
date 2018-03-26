@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93559DCF20691886001C2857 /* libscratchpad.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 93559DCE20691886001C2857 /* libscratchpad.o */; };
 		93F588962068D7DD005767EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F588952068D7DD005767EE /* AppDelegate.swift */; };
 		93F588982068D7DD005767EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F588972068D7DD005767EE /* ViewController.swift */; };
 		93F5889A2068D7DD005767EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F588992068D7DD005767EE /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		93559DCE20691886001C2857 /* libscratchpad.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = libscratchpad.o; path = ../libscratchpad/build/libscratchpad.o; sourceTree = "<group>"; };
 		93F588922068D7DD005767EE /* ScratchPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F588952068D7DD005767EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93F588972068D7DD005767EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93559DCF20691886001C2857 /* libscratchpad.o in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93559DCD20691886001C2857 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93559DCE20691886001C2857 /* libscratchpad.o */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		93F588892068D7DD005767EE = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +91,7 @@
 				93F588A72068D7DD005767EE /* ScratchPadTests */,
 				93F588B22068D7DD005767EE /* ScratchPadUITests */,
 				93F588932068D7DD005767EE /* Products */,
+				93559DCD20691886001C2857 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
