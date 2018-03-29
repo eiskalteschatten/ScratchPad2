@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9339ABEE206D18BE00332AB0 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9339ABED206D18BE00332AB0 /* WindowController.swift */; };
 		93559DCF20691886001C2857 /* libscratchpad.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 93559DCE20691886001C2857 /* libscratchpad.o */; };
 		93F588962068D7DD005767EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F588952068D7DD005767EE /* AppDelegate.swift */; };
 		93F588982068D7DD005767EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F588972068D7DD005767EE /* ViewController.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9339ABED206D18BE00332AB0 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		93559DCE20691886001C2857 /* libscratchpad.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = libscratchpad.o; path = ../libscratchpad/build/libscratchpad.o; sourceTree = "<group>"; };
 		93F588922068D7DD005767EE /* ScratchPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F588952068D7DD005767EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				93F5889B2068D7DD005767EE /* Main.storyboard */,
 				93F5889E2068D7DD005767EE /* Info.plist */,
 				93F5889F2068D7DD005767EE /* ScratchPad.entitlements */,
+				9339ABED206D18BE00332AB0 /* WindowController.swift */,
 			);
 			path = ScratchPad;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93F588982068D7DD005767EE /* ViewController.swift in Sources */,
+				9339ABEE206D18BE00332AB0 /* WindowController.swift in Sources */,
 				93F588962068D7DD005767EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
