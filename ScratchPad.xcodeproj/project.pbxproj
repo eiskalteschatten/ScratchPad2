@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9339ABEE206D18BE00332AB0 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9339ABED206D18BE00332AB0 /* WindowController.swift */; };
 		93DE7E10206FFBC900184F57 /* scratchpadcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93DE7E0F206FFBC900184F57 /* scratchpadcore.a */; };
+		93DE7E142070378200184F57 /* ScratchPadCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93DE7E132070378200184F57 /* ScratchPadCore.cpp */; };
 		93F588962068D7DD005767EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F588952068D7DD005767EE /* AppDelegate.swift */; };
 		93F588982068D7DD005767EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F588972068D7DD005767EE /* ViewController.swift */; };
 		93F5889A2068D7DD005767EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F588992068D7DD005767EE /* Assets.xcassets */; };
@@ -41,6 +42,11 @@
 		93DE7E0B206F04D300184F57 /* cpplibscratchpad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = cpplibscratchpad.a; path = ../libscratchpad/build/cpplibscratchpad.a; sourceTree = "<group>"; };
 		93DE7E0D206F051000184F57 /* scratchpad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = scratchpad.a; path = ../libscratchpad/build/scratchpad.a; sourceTree = "<group>"; };
 		93DE7E0F206FFBC900184F57 /* scratchpadcore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = scratchpadcore.a; path = ../libscratchpad/build/scratchpadcore.a; sourceTree = "<group>"; };
+		93DE7E122070378100184F57 /* ScratchPad-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScratchPad-Bridging-Header.h"; sourceTree = "<group>"; };
+		93DE7E132070378200184F57 /* ScratchPadCore.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ScratchPadCore.cpp; sourceTree = "<group>"; };
+		93DE7E2220703E2F00184F57 /* Note.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Note.h; path = ../../libscratchpad/src/Note.h; sourceTree = "<group>"; };
+		93DE7E2320703E2F00184F57 /* Helper.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Helper.h; path = ../../libscratchpad/src/Helper.h; sourceTree = "<group>"; };
+		93DE7E2420703E2F00184F57 /* Settings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Settings.h; path = ../../libscratchpad/src/Settings.h; sourceTree = "<group>"; };
 		93F588922068D7DD005767EE /* ScratchPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F588952068D7DD005767EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93F588972068D7DD005767EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +100,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		93DE7E112070375700184F57 /* View-Window */ = {
+			isa = PBXGroup;
+			children = (
+				93F588972068D7DD005767EE /* ViewController.swift */,
+				9339ABED206D18BE00332AB0 /* WindowController.swift */,
+			);
+			path = "View-Window";
+			sourceTree = "<group>";
+		};
+		93DE7E152070378E00184F57 /* ScratchPad-Core */ = {
+			isa = PBXGroup;
+			children = (
+				93DE7E132070378200184F57 /* ScratchPadCore.cpp */,
+				93DE7E122070378100184F57 /* ScratchPad-Bridging-Header.h */,
+			);
+			path = "ScratchPad-Core";
+			sourceTree = "<group>";
+		};
 		93F588892068D7DD005767EE = {
 			isa = PBXGroup;
 			children = (
@@ -118,13 +142,16 @@
 		93F588942068D7DD005767EE /* ScratchPad */ = {
 			isa = PBXGroup;
 			children = (
+				93DE7E2320703E2F00184F57 /* Helper.h */,
+				93DE7E2220703E2F00184F57 /* Note.h */,
+				93DE7E2420703E2F00184F57 /* Settings.h */,
 				93F588952068D7DD005767EE /* AppDelegate.swift */,
-				93F588972068D7DD005767EE /* ViewController.swift */,
 				93F588992068D7DD005767EE /* Assets.xcassets */,
 				93F5889B2068D7DD005767EE /* Main.storyboard */,
 				93F5889E2068D7DD005767EE /* Info.plist */,
 				93F5889F2068D7DD005767EE /* ScratchPad.entitlements */,
-				9339ABED206D18BE00332AB0 /* WindowController.swift */,
+				93DE7E112070375700184F57 /* View-Window */,
+				93DE7E152070378E00184F57 /* ScratchPad-Core */,
 			);
 			path = ScratchPad;
 			sourceTree = "<group>";
@@ -215,6 +242,7 @@
 				TargetAttributes = {
 					93F588912068D7DD005767EE = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 					93F588A32068D7DD005767EE = {
@@ -281,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93F588982068D7DD005767EE /* ViewController.swift in Sources */,
+				93DE7E142070378200184F57 /* ScratchPadCore.cpp in Sources */,
 				9339ABEE206D18BE00332AB0 /* WindowController.swift in Sources */,
 				93F588962068D7DD005767EE /* AppDelegate.swift in Sources */,
 			);
@@ -443,14 +472,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ScratchPad/ScratchPad.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = ScratchPad/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Seifert.ScratchPad";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScratchPad/ScratchPad-Core/ScratchPad-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -459,14 +496,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ScratchPad/ScratchPad.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = ScratchPad/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Seifert.ScratchPad";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScratchPad/ScratchPad-Core/ScratchPad-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
