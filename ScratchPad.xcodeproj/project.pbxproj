@@ -473,7 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
-				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ScratchPad/ScratchPad.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -481,9 +481,15 @@
 				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_INPUT_FILETYPE = automatic;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/boost/1.66.0/include/boost;
 				INFOPLIST_FILE = ScratchPad/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/boost/1.66.0/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OTHER_LDFLAGS = "-lboost_filesystem";
 				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Seifert.ScratchPad";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ScratchPad/ScratchPad-Core/ScratchPad-Bridging-Header.h";
@@ -497,7 +503,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
-				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ScratchPad/ScratchPad.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -505,9 +511,15 @@
 				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_INPUT_FILETYPE = automatic;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/boost/1.66.0/include/boost;
 				INFOPLIST_FILE = ScratchPad/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/boost/1.66.0/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OTHER_LDFLAGS = "-lboost_filesystem";
 				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Seifert.ScratchPad";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ScratchPad/ScratchPad-Core/ScratchPad-Bridging-Header.h";
