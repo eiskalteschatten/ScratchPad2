@@ -10,7 +10,7 @@
 		93244AD820704AA700D42A93 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93244AD720704AA700D42A93 /* Note.swift */; };
 		9339ABEE206D18BE00332AB0 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9339ABED206D18BE00332AB0 /* WindowController.swift */; };
 		93DE7E10206FFBC900184F57 /* scratchpadcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93DE7E0F206FFBC900184F57 /* scratchpadcore.a */; };
-		93DE7E142070378200184F57 /* ScratchPadCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93DE7E132070378200184F57 /* ScratchPadCore.cpp */; };
+		93DE7E142070378200184F57 /* NoteWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93DE7E132070378200184F57 /* NoteWrapper.cpp */; };
 		93F588962068D7DD005767EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F588952068D7DD005767EE /* AppDelegate.swift */; };
 		93F588982068D7DD005767EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F588972068D7DD005767EE /* ViewController.swift */; };
 		93F5889A2068D7DD005767EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F588992068D7DD005767EE /* Assets.xcassets */; };
@@ -45,7 +45,7 @@
 		93DE7E0D206F051000184F57 /* scratchpad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = scratchpad.a; path = ../libscratchpad/build/scratchpad.a; sourceTree = "<group>"; };
 		93DE7E0F206FFBC900184F57 /* scratchpadcore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = scratchpadcore.a; path = ../libscratchpad/build/scratchpadcore.a; sourceTree = "<group>"; };
 		93DE7E122070378100184F57 /* ScratchPad-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScratchPad-Bridging-Header.h"; sourceTree = "<group>"; };
-		93DE7E132070378200184F57 /* ScratchPadCore.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ScratchPadCore.cpp; sourceTree = "<group>"; };
+		93DE7E132070378200184F57 /* NoteWrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NoteWrapper.cpp; sourceTree = "<group>"; };
 		93DE7E2220703E2F00184F57 /* Note.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Note.h; path = ../../libscratchpad/src/Note.h; sourceTree = "<group>"; };
 		93DE7E2320703E2F00184F57 /* Helper.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Helper.h; path = ../../libscratchpad/src/Helper.h; sourceTree = "<group>"; };
 		93DE7E2420703E2F00184F57 /* Settings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Settings.h; path = ../../libscratchpad/src/Settings.h; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		93DE7E152070378E00184F57 /* ScratchPad-Core */ = {
 			isa = PBXGroup;
 			children = (
-				93DE7E132070378200184F57 /* ScratchPadCore.cpp */,
+				93DE7E132070378200184F57 /* NoteWrapper.cpp */,
 				93DE7E122070378100184F57 /* ScratchPad-Bridging-Header.h */,
 			);
 			path = "ScratchPad-Core";
@@ -321,7 +321,7 @@
 			files = (
 				93244AD820704AA700D42A93 /* Note.swift in Sources */,
 				93F588982068D7DD005767EE /* ViewController.swift in Sources */,
-				93DE7E142070378200184F57 /* ScratchPadCore.cpp in Sources */,
+				93DE7E142070378200184F57 /* NoteWrapper.cpp in Sources */,
 				9339ABEE206D18BE00332AB0 /* WindowController.swift in Sources */,
 				93F588962068D7DD005767EE /* AppDelegate.swift in Sources */,
 			);

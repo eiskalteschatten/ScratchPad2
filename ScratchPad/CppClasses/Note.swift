@@ -10,14 +10,49 @@ import Foundation
 
 class Note: NSObject {
     private let cppPointer: UnsafeMutableRawPointer
-    private let pathToNotes = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("/tmp/libscratchpad")?.absoluteString
+    private let pathToNotes = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("notes")?.absoluteString
     
     init(name: String, content: String) {
         self.cppPointer = noteCreateNew(pathToNotes, "Note Name", "content here")
         super.init()
     }
     
+    func save() {
+        noteSave(self.cppPointer)
+    }
+    
+    func deleteNote() {
+        noteDeleteNote(self.cppPointer)
+    }
+    
+    func exportNote(destination: String) {
+        noteExportNote(self.cppPointer, destination)
+    }
+    
+    deinit {
+        noteDeconstructor(self.cppPointer)
+    }
+    
+    
+    // Getters
+    
+    func getPathToNote() -> String {
+        return String(cString: noteGetPathToNote(self.cppPointer))
+    }
+    
+    func getFullPathToNote() -> String {
+        return String(cString: noteGetFullPathToNote(self.cppPointer))
+    }
+    
     func getName() -> String {
         return String(cString: noteGetName(self.cppPointer))
+    }
+    
+    func getContents() -> String {
+        return String(cString: noteGetContents(self.cppPointer))
+    }
+    
+    func getPageNumber() -> Int32 {
+        return noteGetPageNumber(self.cppPointer)
     }
 }
