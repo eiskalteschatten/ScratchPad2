@@ -9,17 +9,12 @@
 #include <stdio.h>
 #include "Note.h"
 
-extern "C" void * noteCreateNew() {
-    std::string pathToNote = "/tmp/libscratchpad/";
-    std::string noteName = "test note";
-    std::string contents = "note contents should go here";
-    std::string fullPathToNote = pathToNote + "test_note.rtfd";
-    
-    Note *note = new Note(pathToNote, noteName, contents);
+extern "C" void * noteCreateNew(const char * ptn, const char * n, const char * c) {
+    Note *note = new Note(ptn, n, c);
     return note;
 }
 
-extern "C" const char * noteGetFullPath(const void *const n) {
+extern "C" const char * noteGetName(const void *const n) {
     const Note *const note = (Note *) n;
     return note->getName().c_str();
 }
