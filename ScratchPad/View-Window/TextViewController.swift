@@ -9,6 +9,8 @@
 import Cocoa
 
 class TextViewController: NSViewController {
+    @IBOutlet var mainTextView: NSTextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,5 +21,6 @@ class TextViewController: NSViewController {
             // Update the view, if already loaded.
         }
     }
+    
 }
 

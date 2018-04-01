@@ -605,6 +605,9 @@ CA
                                         <menuItem isSeparatorItem="YES" id="CIE-eg-jgl"/>
                                         <menuItem title="Toggle Ruler" id="dQq-P5-14d">
                                             <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="toggleRuler:" target="Ady-hI-5gd" id="nYA-NE-lH9"/>
+                                            </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="hB3-LF-h0Y"/>
                                         <menuItem title="Enter Full Screen" keyEquivalent="f" id="4J7-dP-txa">
@@ -678,7 +681,7 @@ CA
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-914" y="22"/>
+            <point key="canvasLocation" x="-209" y="-74"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="axx-By-BuW">
@@ -782,6 +785,9 @@ CA
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
                                     </button>
+                                    <connections>
+                                        <action selector="toggleRuler:" target="Oky-zY-oP4" id="ttf-h8-T5e"/>
+                                    </connections>
                                 </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="588E4A86-FF15-4CDE-A18E-4A0B79E34B13" label="Delete Note" paletteLabel="Delete Note" image="NSTouchBarDeleteTemplate" id="wTJ-Hb-1mt">
                                     <nil key="toolTip"/>
@@ -900,7 +906,7 @@ CA
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Egl-Od-qQ9">
-                                            <rect key="frame" x="7" y="11" width="33" height="14"/>
+                                            <rect key="frame" x="7" y="11" width="431" height="14"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="14" id="GJ6-AQ-NX5"/>
                                             </constraints>
@@ -924,6 +930,7 @@ CA
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="8vW-dW-gMo" firstAttribute="top" secondItem="km6-FZ-cn3" secondAttribute="top" constant="9" id="5HL-Ja-2L1"/>
+                                        <constraint firstItem="CRX-yv-EKP" firstAttribute="leading" secondItem="Egl-Od-qQ9" secondAttribute="trailing" constant="8" id="8Dq-1I-gOM"/>
                                         <constraint firstAttribute="bottom" secondItem="CRX-yv-EKP" secondAttribute="bottom" constant="11" id="MHH-XP-WB7"/>
                                         <constraint firstItem="Egl-Od-qQ9" firstAttribute="leading" secondItem="km6-FZ-cn3" secondAttribute="leading" constant="9" id="Rus-pG-5gn"/>
                                         <constraint firstAttribute="trailing" secondItem="8vW-dW-gMo" secondAttribute="trailing" constant="9" id="avp-aL-EBL"/>
@@ -981,6 +988,9 @@ CA
                             <constraint firstItem="fTh-S3-ny8" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="70" id="zpH-jK-Hm2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainTextView" destination="MBg-D3-sgg" id="i5z-Dd-Zfn"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
