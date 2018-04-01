@@ -768,15 +768,13 @@ CA
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <toolbar key="toolbar" implicitIdentifier="737A5CE2-7B5E-4236-9AD9-58B0B21198B9" displayMode="iconOnly" sizeMode="regular" id="R8U-rX-arY">
                             <allowedToolbarItems>
-                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="cso-Mz-HuA"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="hD4-a0-bre"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="waU-hV-uPJ"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="fhQ-EZ-rBZ"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="nOr-mb-HaU"/>
                                 <toolbarItem implicitItemIdentifier="3B086453-D413-4DA3-A1FC-2A03669824EF" label="Ruler" paletteLabel="Ruler" id="EPq-VD-vhm">
                                     <nil key="toolTip"/>
                                     <size key="minSize" width="38" height="28"/>
-                                    <size key="maxSize" width="45" height="33"/>
+                                    <size key="maxSize" width="38" height="33"/>
                                     <button key="view" verticalHuggingPriority="750" id="tfn-Zk-i6x">
                                         <rect key="frame" x="0.0" y="14" width="38" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -791,8 +789,8 @@ CA
                                 </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="588E4A86-FF15-4CDE-A18E-4A0B79E34B13" label="Delete Note" paletteLabel="Delete Note" image="NSTouchBarDeleteTemplate" id="wTJ-Hb-1mt">
                                     <nil key="toolTip"/>
-                                    <size key="minSize" width="45" height="28"/>
-                                    <size key="maxSize" width="52" height="33"/>
+                                    <size key="minSize" width="38" height="28"/>
+                                    <size key="maxSize" width="38" height="33"/>
                                     <button key="view" verticalHuggingPriority="750" id="5dI-Pp-xXF">
                                         <rect key="frame" x="9" y="14" width="52" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -804,8 +802,8 @@ CA
                                 </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="E8CE6331-E6ED-493B-9E50-041C16D1A362" label="Export Note" paletteLabel="Export Note" image="NSTouchBarShareTemplate" id="a1F-Sz-HSG">
                                     <nil key="toolTip"/>
-                                    <size key="minSize" width="45" height="28"/>
-                                    <size key="maxSize" width="52" height="33"/>
+                                    <size key="minSize" width="38" height="28"/>
+                                    <size key="maxSize" width="38" height="33"/>
                                     <button key="view" verticalHuggingPriority="750" id="ck6-Rq-gNz">
                                         <rect key="frame" x="9" y="14" width="52" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -817,8 +815,8 @@ CA
                                 </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="1CC7CAF0-9A06-4B40-977E-416ABFEC308C" label="Settings" paletteLabel="Settings" image="NSActionTemplate" id="BJu-eK-OM4">
                                     <nil key="toolTip"/>
-                                    <size key="minSize" width="45" height="28"/>
-                                    <size key="maxSize" width="52" height="33"/>
+                                    <size key="minSize" width="38" height="28"/>
+                                    <size key="maxSize" width="38" height="33"/>
                                     <button key="view" verticalHuggingPriority="750" id="edA-eY-UO8">
                                         <rect key="frame" x="0.0" y="14" width="52" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -828,14 +826,46 @@ CA
                                         </buttonCell>
                                     </button>
                                 </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="4B7CAAA8-3CB0-48E9-94B0-4A388F3C0D8D" explicitItemIdentifier="NSToolbarShowColorsItem" label="Colors" paletteLabel="Colors" image="NSColorPanel" id="hKZ-vs-UfP">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="38" height="28"/>
+                                    <size key="maxSize" width="38" height="33"/>
+                                    <button key="view" verticalHuggingPriority="750" id="nml-4g-wnz">
+                                        <rect key="frame" x="0.0" y="14" width="52" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSColorPanel" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9xc-1c-l02">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <connections>
+                                        <action selector="orderFrontColorPanel:" target="Oky-zY-oP4" id="wY0-ga-XP9"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="97A79DB2-6EC9-4F80-A379-929E2B5CB87C" explicitItemIdentifier="NSToolbarShowFontsItem" label="Fonts" paletteLabel="Fonts" image="NSFontPanel" id="i7P-RT-bac">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="38" height="28"/>
+                                    <size key="maxSize" width="38" height="33"/>
+                                    <button key="view" verticalHuggingPriority="750" id="OvL-ar-42n">
+                                        <rect key="frame" x="0.0" y="14" width="52" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSFontPanel" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yBe-Vv-l8u">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <connections>
+                                        <action selector="orderFrontFontPanel:" target="Oky-zY-oP4" id="wJM-m1-xgZ"/>
+                                    </connections>
+                                </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="4739AD2D-30B6-40C9-8C6F-6F644648F2BE" label="Go To Page" paletteLabel="Go To Page" id="p55-f4-cDJ">
                                     <nil key="toolTip"/>
                                     <size key="minSize" width="31" height="22"/>
-                                    <size key="maxSize" width="32" height="22"/>
+                                    <size key="maxSize" width="56" height="22"/>
                                     <textField key="view" verticalHuggingPriority="750" textCompletion="NO" id="ziz-J1-Hye">
-                                        <rect key="frame" x="18" y="14" width="31" height="22"/>
+                                        <rect key="frame" x="6" y="14" width="55" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="tQb-fu-QcA">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Page #" drawsBackground="YES" usesSingleLineMode="YES" id="tQb-fu-QcA">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -864,8 +894,8 @@ CA
                                 <toolbarItem reference="p55-f4-cDJ"/>
                                 <toolbarItem reference="nOr-mb-HaU"/>
                                 <toolbarItem reference="EPq-VD-vhm"/>
-                                <toolbarItem reference="cso-Mz-HuA"/>
-                                <toolbarItem reference="hD4-a0-bre"/>
+                                <toolbarItem reference="hKZ-vs-UfP"/>
+                                <toolbarItem reference="i7P-RT-bac"/>
                             </defaultToolbarItems>
                         </toolbar>
                         <connections>
@@ -911,7 +941,7 @@ CA
                                                 <constraint firstAttribute="height" constant="14" id="GJ6-AQ-NX5"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="MhQ-Ww-BRU">
-                                                <font key="font" metaFont="system" size="11"/>
+                                                <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1012,6 +1042,8 @@ CA
     </scenes>
     <resources>
         <image name="NSActionTemplate" width="14" height="14"/>
+        <image name="NSColorPanel" width="32" height="32"/>
+        <image name="NSFontPanel" width="32" height="32"/>
         <image name="NSLeftFacingTriangleTemplate" width="9" height="12"/>
         <image name="NSPreferencesGeneral" width="32" height="32"/>
         <image name="NSRightFacingTriangleTemplate" width="9" height="12"/>
