@@ -11,6 +11,7 @@
 		9339ABEE206D18BE00332AB0 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9339ABED206D18BE00332AB0 /* WindowController.swift */; };
 		93DE7E10206FFBC900184F57 /* scratchpadcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93DE7E0F206FFBC900184F57 /* scratchpadcore.a */; };
 		93DE7E142070378200184F57 /* NoteWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93DE7E132070378200184F57 /* NoteWrapper.cpp */; };
+		93ECE0912071465D00F416F0 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ECE0902071465D00F416F0 /* Window.swift */; };
 		93F588962068D7DD005767EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F588952068D7DD005767EE /* AppDelegate.swift */; };
 		93F588982068D7DD005767EE /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F588972068D7DD005767EE /* TextViewController.swift */; };
 		93F5889A2068D7DD005767EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F588992068D7DD005767EE /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		93DE7E2220703E2F00184F57 /* Note.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Note.h; path = ../../libscratchpad/src/Note.h; sourceTree = "<group>"; };
 		93DE7E2320703E2F00184F57 /* Helper.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Helper.h; path = ../../libscratchpad/src/Helper.h; sourceTree = "<group>"; };
 		93DE7E2420703E2F00184F57 /* Settings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Settings.h; path = ../../libscratchpad/src/Settings.h; sourceTree = "<group>"; };
+		93ECE0902071465D00F416F0 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
 		93F588922068D7DD005767EE /* ScratchPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F588952068D7DD005767EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93F588972068D7DD005767EE /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			children = (
 				93F588972068D7DD005767EE /* TextViewController.swift */,
 				9339ABED206D18BE00332AB0 /* WindowController.swift */,
+				93ECE0902071465D00F416F0 /* Window.swift */,
 			);
 			path = "View-Window";
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				93DE7E142070378200184F57 /* NoteWrapper.cpp in Sources */,
 				9339ABEE206D18BE00332AB0 /* WindowController.swift in Sources */,
 				93F588962068D7DD005767EE /* AppDelegate.swift in Sources */,
+				93ECE0912071465D00F416F0 /* Window.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

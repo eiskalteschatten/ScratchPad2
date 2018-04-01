@@ -8,6 +8,9 @@
 
 import Cocoa
 
-class WindowController: NSWindow {
-    
+class WindowController: NSWindowController {
+    override func windowDidLoad() {
+        super.windowDidLoad()
+        window?.titleVisibility = .hidden
+    }
 }
