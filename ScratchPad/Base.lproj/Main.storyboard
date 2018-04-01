@@ -824,7 +824,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Egl-Od-qQ9">
-                                            <rect key="frame" x="7" y="11" width="427" height="14"/>
+                                            <rect key="frame" x="7" y="11" width="33" height="14"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="14" id="GJ6-AQ-NX5"/>
                                             </constraints>
@@ -835,12 +835,12 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CRX-yv-EKP">
-                                            <rect key="frame" x="438" y="9" width="35" height="17"/>
+                                            <rect key="frame" x="442" y="11" width="31" height="14"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="31" id="TEK-5l-4xe"/>
+                                                <constraint firstAttribute="width" constant="27" id="YVm-o6-Spd"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="1000" id="XZ6-Xe-Qar">
-                                                <font key="font" metaFont="system"/>
+                                                <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -848,13 +848,12 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="8vW-dW-gMo" firstAttribute="top" secondItem="km6-FZ-cn3" secondAttribute="top" constant="9" id="5HL-Ja-2L1"/>
-                                        <constraint firstAttribute="trailing" secondItem="CRX-yv-EKP" secondAttribute="trailing" constant="9" id="Ijx-zH-Xc5"/>
+                                        <constraint firstAttribute="bottom" secondItem="CRX-yv-EKP" secondAttribute="bottom" constant="11" id="MHH-XP-WB7"/>
                                         <constraint firstItem="Egl-Od-qQ9" firstAttribute="leading" secondItem="km6-FZ-cn3" secondAttribute="leading" constant="9" id="Rus-pG-5gn"/>
-                                        <constraint firstAttribute="bottom" secondItem="CRX-yv-EKP" secondAttribute="bottom" constant="9" id="SEq-He-847"/>
                                         <constraint firstAttribute="trailing" secondItem="8vW-dW-gMo" secondAttribute="trailing" constant="9" id="avp-aL-EBL"/>
                                         <constraint firstItem="8vW-dW-gMo" firstAttribute="leading" secondItem="km6-FZ-cn3" secondAttribute="leading" constant="9" id="qco-jO-5Gu"/>
+                                        <constraint firstAttribute="trailing" secondItem="CRX-yv-EKP" secondAttribute="trailing" constant="9" id="r5g-Ij-0IJ"/>
                                         <constraint firstItem="Egl-Od-qQ9" firstAttribute="top" secondItem="8vW-dW-gMo" secondAttribute="bottom" constant="11" id="sy8-Pk-y6u"/>
-                                        <constraint firstItem="CRX-yv-EKP" firstAttribute="leading" secondItem="Egl-Od-qQ9" secondAttribute="trailing" constant="8" id="xZd-qN-A2V"/>
                                     </constraints>
                                 </view>
                                 <constraints>
