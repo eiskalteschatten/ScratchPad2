@@ -796,7 +796,7 @@ CA
                                 <toolbarItem implicitItemIdentifier="588E4A86-FF15-4CDE-A18E-4A0B79E34B13" label="Delete Note" paletteLabel="Delete Note" image="NSTouchBarDeleteTemplate" id="wTJ-Hb-1mt">
                                     <nil key="toolTip"/>
                                     <size key="minSize" width="38" height="28"/>
-                                    <size key="maxSize" width="38" height="33"/>
+                                    <size key="maxSize" width="52" height="33"/>
                                     <button key="view" verticalHuggingPriority="750" id="5dI-Pp-xXF">
                                         <rect key="frame" x="9" y="14" width="52" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -809,7 +809,7 @@ CA
                                 <toolbarItem implicitItemIdentifier="E8CE6331-E6ED-493B-9E50-041C16D1A362" label="Export Note" paletteLabel="Export Note" image="NSTouchBarShareTemplate" id="a1F-Sz-HSG">
                                     <nil key="toolTip"/>
                                     <size key="minSize" width="38" height="28"/>
-                                    <size key="maxSize" width="38" height="33"/>
+                                    <size key="maxSize" width="52" height="33"/>
                                     <button key="view" verticalHuggingPriority="750" id="ck6-Rq-gNz">
                                         <rect key="frame" x="9" y="14" width="52" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -822,7 +822,7 @@ CA
                                 <toolbarItem implicitItemIdentifier="1CC7CAF0-9A06-4B40-977E-416ABFEC308C" label="Settings" paletteLabel="Settings" image="NSActionTemplate" id="BJu-eK-OM4">
                                     <nil key="toolTip"/>
                                     <size key="minSize" width="38" height="28"/>
-                                    <size key="maxSize" width="38" height="33"/>
+                                    <size key="maxSize" width="52" height="33"/>
                                     <button key="view" verticalHuggingPriority="750" id="edA-eY-UO8">
                                         <rect key="frame" x="0.0" y="14" width="52" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -835,7 +835,7 @@ CA
                                 <toolbarItem implicitItemIdentifier="4B7CAAA8-3CB0-48E9-94B0-4A388F3C0D8D" label="Colors" paletteLabel="Colors" image="NSColorPanel" id="hKZ-vs-UfP">
                                     <nil key="toolTip"/>
                                     <size key="minSize" width="38" height="28"/>
-                                    <size key="maxSize" width="38" height="33"/>
+                                    <size key="maxSize" width="52" height="33"/>
                                     <button key="view" verticalHuggingPriority="750" id="nml-4g-wnz">
                                         <rect key="frame" x="0.0" y="14" width="52" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -851,7 +851,7 @@ CA
                                 <toolbarItem implicitItemIdentifier="97A79DB2-6EC9-4F80-A379-929E2B5CB87C" label="Fonts" paletteLabel="Fonts" image="NSFontPanel" id="i7P-RT-bac">
                                     <nil key="toolTip"/>
                                     <size key="minSize" width="38" height="28"/>
-                                    <size key="maxSize" width="38" height="33"/>
+                                    <size key="maxSize" width="52" height="33"/>
                                     <button key="view" verticalHuggingPriority="750" id="OvL-ar-42n">
                                         <rect key="frame" x="0.0" y="14" width="52" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -899,7 +899,6 @@ CA
                                 <toolbarItem reference="0HF-1c-dTi"/>
                                 <toolbarItem reference="p55-f4-cDJ"/>
                                 <toolbarItem reference="nOr-mb-HaU"/>
-                                <toolbarItem reference="EPq-VD-vhm"/>
                                 <toolbarItem reference="hKZ-vs-UfP"/>
                                 <toolbarItem reference="i7P-RT-bac"/>
                             </defaultToolbarItems>
