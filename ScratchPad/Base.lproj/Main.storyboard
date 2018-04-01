@@ -771,14 +771,14 @@ CA
                                 <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="waU-hV-uPJ"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="fhQ-EZ-rBZ"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="nOr-mb-HaU"/>
-                                <toolbarItem implicitItemIdentifier="3B086453-D413-4DA3-A1FC-2A03669824EF" label="Ruler" paletteLabel="Ruler" id="EPq-VD-vhm">
+                                <toolbarItem implicitItemIdentifier="3B086453-D413-4DA3-A1FC-2A03669824EF" label="Ruler" paletteLabel="Ruler" image="showruler" id="EPq-VD-vhm">
                                     <nil key="toolTip"/>
                                     <size key="minSize" width="38" height="28"/>
                                     <size key="maxSize" width="38" height="33"/>
                                     <button key="view" verticalHuggingPriority="750" id="tfn-Zk-i6x">
                                         <rect key="frame" x="0.0" y="14" width="38" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="roundTextured" title="R" bezelStyle="texturedRounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="l98-PL-PFw">
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="showruler" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="l98-PL-PFw">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
@@ -816,7 +816,7 @@ CA
                                 <toolbarItem implicitItemIdentifier="1CC7CAF0-9A06-4B40-977E-416ABFEC308C" label="Settings" paletteLabel="Settings" image="NSActionTemplate" id="BJu-eK-OM4">
                                     <nil key="toolTip"/>
                                     <size key="minSize" width="38" height="28"/>
-                                    <size key="maxSize" width="38" height="33"/>
+                                    <size key="maxSize" width="52" height="33"/>
                                     <button key="view" verticalHuggingPriority="750" id="edA-eY-UO8">
                                         <rect key="frame" x="0.0" y="14" width="52" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -1049,5 +1049,6 @@ CA
         <image name="NSRightFacingTriangleTemplate" width="9" height="12"/>
         <image name="NSTouchBarDeleteTemplate" width="15" height="30"/>
         <image name="NSTouchBarShareTemplate" width="15" height="30"/>
+        <image name="showruler" width="32" height="32"/>
     </resources>
 </document>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		93244AD820704AA700D42A93 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93244AD720704AA700D42A93 /* Note.swift */; };
+		932E12272071708B00F1F0CA /* showruler.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 932E12262071708B00F1F0CA /* showruler.tiff */; };
 		9339ABEE206D18BE00332AB0 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9339ABED206D18BE00332AB0 /* WindowController.swift */; };
 		93DE7E10206FFBC900184F57 /* scratchpadcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93DE7E0F206FFBC900184F57 /* scratchpadcore.a */; };
 		93DE7E142070378200184F57 /* NoteWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93DE7E132070378200184F57 /* NoteWrapper.cpp */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		93244AD720704AA700D42A93 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		932E12262071708B00F1F0CA /* showruler.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = showruler.tiff; sourceTree = "<group>"; };
 		9339ABED206D18BE00332AB0 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		93559DCE20691886001C2857 /* libscratchpad.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = libscratchpad.o; path = ../libscratchpad/build/libscratchpad.o; sourceTree = "<group>"; };
 		93DE7E09206F03DA00184F57 /* libscratchpad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libscratchpad.a; path = ../libscratchpad/build/libscratchpad.a; sourceTree = "<group>"; };
@@ -100,6 +102,14 @@
 			path = CppClasses;
 			sourceTree = "<group>";
 		};
+		932E12292071709800F1F0CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				932E12262071708B00F1F0CA /* showruler.tiff */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		93559DCD20691886001C2857 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +144,7 @@
 		93F588892068D7DD005767EE = {
 			isa = PBXGroup;
 			children = (
+				932E12292071709800F1F0CA /* Resources */,
 				93F588942068D7DD005767EE /* ScratchPad */,
 				93F588A72068D7DD005767EE /* ScratchPadTests */,
 				93F588B22068D7DD005767EE /* ScratchPadUITests */,
@@ -298,6 +309,7 @@
 			files = (
 				93F5889A2068D7DD005767EE /* Assets.xcassets in Resources */,
 				93F5889D2068D7DD005767EE /* Main.storyboard in Resources */,
+				932E12272071708B00F1F0CA /* showruler.tiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
