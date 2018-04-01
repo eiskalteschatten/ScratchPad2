@@ -269,6 +269,11 @@
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					93F588A32068D7DD005767EE = {
 						CreatedOnToolsVersion = 9.2;
@@ -506,6 +511,7 @@
 				CODE_SIGN_ENTITLEMENTS = ScratchPad/ScratchPad.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MMG5EY7EYL;
 				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_INPUT_FILETYPE = automatic;
@@ -536,6 +542,7 @@
 				CODE_SIGN_ENTITLEMENTS = ScratchPad/ScratchPad.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MMG5EY7EYL;
 				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_INPUT_FILETYPE = automatic;

@@ -16,8 +16,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         print(note.getPathToNote())
         print(note.getFullPathToNote())
         print(note.getName())
-        print(note.getDateModified())
         print(note.getContents())
+        note.save();
+        print(note.getDateModified())
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
