@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -696,7 +695,7 @@
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="nOr-mb-HaU"/>
                                 <toolbarItem implicitItemIdentifier="3B086453-D413-4DA3-A1FC-2A03669824EF" label="Ruler" paletteLabel="Ruler" id="EPq-VD-vhm">
                                     <nil key="toolTip"/>
-                                    <size key="minSize" width="45" height="33"/>
+                                    <size key="minSize" width="38" height="28"/>
                                     <size key="maxSize" width="45" height="33"/>
                                     <button key="view" verticalHuggingPriority="750" id="tfn-Zk-i6x">
                                         <rect key="frame" x="0.0" y="14" width="38" height="28"/>
@@ -709,8 +708,8 @@
                                 </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="588E4A86-FF15-4CDE-A18E-4A0B79E34B13" label="Delete Note" paletteLabel="Delete Note" image="NSTouchBarDeleteTemplate" id="wTJ-Hb-1mt">
                                     <nil key="toolTip"/>
-                                    <size key="minSize" width="45" height="33"/>
-                                    <size key="maxSize" width="45" height="33"/>
+                                    <size key="minSize" width="45" height="28"/>
+                                    <size key="maxSize" width="52" height="33"/>
                                     <button key="view" verticalHuggingPriority="750" id="5dI-Pp-xXF">
                                         <rect key="frame" x="9" y="14" width="52" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -722,8 +721,8 @@
                                 </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="E8CE6331-E6ED-493B-9E50-041C16D1A362" label="Export Note" paletteLabel="Export Note" image="NSTouchBarShareTemplate" id="a1F-Sz-HSG">
                                     <nil key="toolTip"/>
-                                    <size key="minSize" width="45" height="33"/>
-                                    <size key="maxSize" width="45" height="33"/>
+                                    <size key="minSize" width="45" height="28"/>
+                                    <size key="maxSize" width="52" height="33"/>
                                     <button key="view" verticalHuggingPriority="750" id="ck6-Rq-gNz">
                                         <rect key="frame" x="9" y="14" width="52" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -735,8 +734,8 @@
                                 </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="1CC7CAF0-9A06-4B40-977E-416ABFEC308C" label="Settings" paletteLabel="Settings" image="NSActionTemplate" id="BJu-eK-OM4">
                                     <nil key="toolTip"/>
-                                    <size key="minSize" width="45" height="33"/>
-                                    <size key="maxSize" width="45" height="33"/>
+                                    <size key="minSize" width="45" height="28"/>
+                                    <size key="maxSize" width="52" height="33"/>
                                     <button key="view" verticalHuggingPriority="750" id="edA-eY-UO8">
                                         <rect key="frame" x="0.0" y="14" width="52" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -798,10 +797,10 @@
             </objects>
             <point key="canvasLocation" x="-216" y="358"/>
         </scene>
-        <!--View Controller-->
+        <!--Text View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="ScratchPad" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="TextViewController" customModule="ScratchPad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
