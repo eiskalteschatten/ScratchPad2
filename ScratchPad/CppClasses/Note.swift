@@ -10,10 +10,9 @@ import Foundation
 
 class Note: NSObject {
     private let cppPointer: UnsafeMutableRawPointer
-    private let pathToNotes = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("notes")?.absoluteString
     
     init(name: String, content: String) {
-        self.cppPointer = noteCreateNew(pathToNotes, "Note Name", "content here")
+        self.cppPointer = noteCreateNew(Constants.Path.pathToNotes, "Note Name", "content here")
         super.init()
     }
     
