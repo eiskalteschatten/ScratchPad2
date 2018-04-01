@@ -13,5 +13,6 @@ void noteDeconstructor(const void *const n);
 const char * noteGetPathToNote(const void *const n);
 const char * noteGetFullPathToNote(const void *const n);
 const char* noteGetName(const void *const n);
+const char * noteGetDateModified(const void *const n);
 const char * noteGetContents(const void *const n);
 int noteGetPageNumber(const void *const n);

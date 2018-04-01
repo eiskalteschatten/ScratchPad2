@@ -51,6 +51,11 @@ extern "C" const char * noteGetName(const void *const n) {
     return note->getName().c_str();
 }
 
+extern "C" const char * noteGetDateModified(const void *const n) {
+    const Note *const note = (Note *) n;
+    return note->getDateModified().c_str();
+}
+
 extern "C" const char * noteGetContents(const void *const n) {
     const Note *const note = (Note *) n;
     return note->getContents().c_str();

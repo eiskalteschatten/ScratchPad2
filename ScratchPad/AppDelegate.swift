@@ -16,6 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         print(note.getPathToNote())
         print(note.getFullPathToNote())
         print(note.getName())
+        print(note.getDateModified())
         print(note.getContents())
     }
 

@@ -48,6 +48,10 @@ class Note: NSObject {
         return String(cString: noteGetName(self.cppPointer))
     }
     
+    func getDateModified() -> String {
+        return String(cString: noteGetDateModified(self.cppPointer))
+    }
+    
     func getContents() -> String {
         return String(cString: noteGetContents(self.cppPointer))
     }
